@@ -1,0 +1,41 @@
+/* Remove previous layout styles and replace with: */
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Ensures no scrollbars unless content overflows */
+.dashboard-container {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* For the tables inside RecentPlates */
+.recent-plates-table {
+  width: 100%;
+}
+
+.recent-plates-table th {
+  position: absolute;
+  top: 0;
+  background-color: white;
+  z-index: 1;
+}
+
+/* Responsive behavior */
+@media (max-width: 1200px) {
+  .dashboard-container {
+    flex-direction: column;
+  }
+  
+  .left-panel, .right-panel {
+    width: 100% !important;
+  }
+  
+  .left-panel {
+    height: auto;
+    padding-bottom: 16px;
+  }
+}

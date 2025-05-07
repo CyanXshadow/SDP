@@ -1,0 +1,48 @@
+@media (max-width: 768px) {
+    .database-header {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 16px;
+    }
+  
+    .database-controls {
+      width: 100%;
+      flex-direction: column;
+      gap: 12px;
+    }
+  
+    .filter-select {
+      width: 100%;
+    }
+  
+    .camera-feed-video {
+      height: 300px;
+    }
+  
+    .recent-plates-table th,
+    .recent-plates-table td,
+    .database-table th,
+    .database-table td {
+      padding: 8px 12px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .database-container {
+      margin: 12px;
+      padding: 16px;
+    }
+  
+    .camera-feed-video {
+      height: 250px;
+    }
+  
+    .plate-number {
+      font-size: 0.875rem;
+    }
+  
+    .camera-nav-button {
+      width: 32px;
+      height: 32px;
+    }
+  }
